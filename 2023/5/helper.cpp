@@ -47,11 +47,9 @@ double FindMinLoc(
         );
 
         if (check_1) {
-            for (int j = 0; j < seed_low.size(); ++j) {
-                if (id >= seed_low[j]) {
-                    if (id <= seed_high[j]) {
-                        return(i);
-                    }
+            for (int j = 0, size = seed_low.size(); j < size; ++j) {
+                if (id >= seed_low[j] && id <= seed_high[j]) {
+                    return(i);
                 }
             }
         }

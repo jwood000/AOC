@@ -67,4 +67,5 @@ aoc_5.2 <- function(file = "input.txt") {
 }
 
 cat("part 1:",  aoc_5.1(), "\n")
-cat("part 2:",  aoc_5.2(), "\n")
+cat("part 2:\n")
+print(system.time(print(aoc_5.2())))
